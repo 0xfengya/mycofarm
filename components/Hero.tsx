@@ -215,7 +215,7 @@ export default function Hero() {
 
               {/* Floating capacity card */}
               <div
-                className="absolute -left-12 bottom-16 bg-black/70 backdrop-blur-xl border border-white/15 rounded-2xl p-4 shadow-xl"
+                className="absolute left-3 lg:-left-12 bottom-16 bg-black/70 backdrop-blur-xl border border-white/15 rounded-2xl p-4 shadow-xl"
                 style={{ animation: "floatY 5s 1s ease-in-out infinite" }}
               >
                 <div className="flex items-center gap-3">
@@ -229,7 +229,7 @@ export default function Hero() {
 
               {/* Floating satisfaction badge */}
               <div
-                className="absolute -right-6 top-16 bg-green-500 text-white rounded-2xl p-4 shadow-xl shadow-green-500/30"
+                className="absolute right-3 lg:-right-6 top-16 bg-green-500 text-white rounded-2xl p-4 shadow-xl shadow-green-500/30"
                 style={{ animation: "floatX 4s 0.5s ease-in-out infinite" }}
               >
                 <div className="text-2xl font-black" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
