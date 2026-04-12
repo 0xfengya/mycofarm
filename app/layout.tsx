@@ -13,8 +13,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="id" data-theme="forest">
+    // data-scroll-behavior="smooth" tells Next.js to allow smooth scroll on <html>
+    <html lang="id" data-theme="forest" data-scroll-behavior="smooth">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
           rel="stylesheet"
@@ -24,10 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Cursor />
         <WAFloat />
         <Navbar />
-        {/* pt-[72px] fixes the mobile space below fixed navbar */}
-        <main className="pt-[72px]">
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
